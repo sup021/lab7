@@ -37,6 +37,9 @@
 		</div>
 
 		<h4>Projects</h4>
+		{{#if viewAlt}}
+		Min! <button class="likeBtn">Like</button>
+		{{else}}
 		{{#each projects}}
 		<div class="project" id="{{id}}">
 			<div class="thumbnail">
@@ -49,7 +52,7 @@
 			</div>
 		</div>
 		{{/each}}
-
+		{{/if}}
 
 </body>
 
